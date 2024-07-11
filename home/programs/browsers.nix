@@ -14,7 +14,7 @@
 
     firefox = {
       enable = true;
-      profiles.ryan = {};
+      profiles.julmx = {};
     };
   };
 }

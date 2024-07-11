@@ -13,8 +13,8 @@
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home = {
-    username = "ryan";
-    homeDirectory = "/home/ryan";
+    username = "julmx";
+    homeDirectory = "/home/julmx";
 
     # This value determines the Home Manager release that your
     # configuration is compatible with. This helps avoid breakage

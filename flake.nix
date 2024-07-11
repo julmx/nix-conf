@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration of Ryan Yin";
+  description = "NixOS configuration of julmx Yin";
 
   ##################################################################################################################
   #
@@ -50,7 +50,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.ryan = import ./home;
+            home-manager.users.julmx = import ./home;
           }
         ];
       };
@@ -67,7 +67,7 @@
             home-manager.useUserPackages = true;
 
             home-manager.extraSpecialArgs = inputs;
-            home-manager.users.ryan = import ./home;
+            home-manager.users.julmx = import ./home;
           }
         ];
       };
