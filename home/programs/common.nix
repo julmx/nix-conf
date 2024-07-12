@@ -12,7 +12,7 @@
 
     # utils
     ripgrep
-    yq-go # https://github.com/mikefarah/yq
+    yq-go # https://github.com/mikefarah/yq lightweight and portable command-line YAML, JSON and XML use jq syntax, more formats supported
     htop
 
     # misc
@@ -25,16 +25,16 @@
     obsidian
 
     # IDE
-    insomnia
+    ##insomnia # API design tool
 
     # cloud native
     docker-compose
-    kubectl
+    #kubectl
 
-    nodejs
-    nodePackages.npm
-    nodePackages.pnpm
-    yarn
+    ##nodejs
+    ##nodePackages.npm
+    ##nodePackages.pnpm
+    ##yarn
 
     # db related
     dbeaver
@@ -69,7 +69,7 @@
     eza.enable = true; # A modern replacement for ‘ls’
     jq.enable = true; # A lightweight and flexible command-line JSON processor
     ssh.enable = true;
-    aria2.enable = true;
+    ##aria2.enable = true; # downloader tool
 
     skim = {
       enable = true;
@@ -83,7 +83,7 @@
   };
 
   services = {
-    syncthing.enable = true;
+    ##syncthing.enable = true;
 
     # auto mount usb drives
     udiskie.enable = true;
