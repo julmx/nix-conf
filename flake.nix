@@ -69,6 +69,8 @@
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.julmx = import ./home;
           }
+        ];
+      };
 
         mainPC = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
