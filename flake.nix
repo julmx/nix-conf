@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration of julmx Yin";
+  description = "NixOS configuration of julmx";
 
   ##################################################################################################################
   #
@@ -60,6 +60,21 @@
 
         modules = [
           ./hosts/msi-rtx4090
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+
+            home-manager.extraSpecialArgs = inputs;
+            home-manager.users.julmx = import ./home;
+          }
+
+        mainPC = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+
+        modules = [
+          ./hosts/mainPC
 
           home-manager.nixosModules.home-manager
           {
