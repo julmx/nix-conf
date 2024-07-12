@@ -24,7 +24,7 @@
       scripts = [pkgs.mpvScripts.mpris];
     };
 
-    obs-studio.enable = true;
+    ##obs-studio.enable = true;
   };
 
   services = {

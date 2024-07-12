@@ -26,7 +26,7 @@
 
     # IDE
     ##insomnia # API design tool
-
+    
     # cloud native
     docker-compose
     #kubectl
@@ -42,7 +42,14 @@
     pgcli
   ];
 
-  programs = {
+programs = {
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
+    };
+
     tmux = {
       enable = true;
       clock24 = true;
