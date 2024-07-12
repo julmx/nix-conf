@@ -133,7 +133,7 @@ in {
     scrot
     neofetch
     xfce.thunar # xfce4's file manager
-    nnn # terminal file manager
+    ranger # terminal file manager
   ];
 
   # Enable sound with pipewire.

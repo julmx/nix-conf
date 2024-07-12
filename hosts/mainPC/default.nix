@@ -36,6 +36,18 @@
   networking.networkmanager.enable = true;
   ##networking.defaultGateway = "192.168.1.254";
 
+  # Dual monitor configuration.
+  services.xserver.xrandrHeads = [
+   {
+    output = "HDMI-1";
+    monitorConfig = ''Option "LeftOf" "DP-0"'';
+   }
+  {
+    output = "DP-1";
+    primary = true;
+    monitorConfig = ''Option "RightOf" "HDMI-0"'';
+  }
+  
   # for Nvidia GPU
   services.xserver.videoDrivers = ["nvidia"];
   hardware.opengl.enable = true;
