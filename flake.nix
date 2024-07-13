@@ -82,6 +82,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bkp";
 
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.julmx = import ./home;
