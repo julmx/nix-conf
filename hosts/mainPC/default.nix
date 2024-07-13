@@ -40,12 +40,12 @@
   services.xserver.xrandrHeads = [
    {
     output = "HDMI-0";
-    monitorConfig = ''Option "LeftOf" "DP-0"'';
+    primary = true;
+    monitorConfig = ''Option "RightOf" "DP-0"'';
    }
    {
     output = "DP-0";
-    primary = true;
-    monitorConfig = ''Option "RightOf" "HDMI-0"'';
+    monitorConfig = ''Option "LeftOf" "HDMI-0"'';
    }
   ];
 
