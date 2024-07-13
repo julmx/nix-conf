@@ -39,11 +39,11 @@
   # Dual monitor configuration.
   services.xserver.xrandrHeads = [
    {
-    output = "HDMI-1";
+    output = "HDMI-0";
     monitorConfig = ''Option "LeftOf" "DP-0"'';
    }
    {
-    output = "DP-1";
+    output = "DP-0";
     primary = true;
     monitorConfig = ''Option "RightOf" "HDMI-0"'';
    }
