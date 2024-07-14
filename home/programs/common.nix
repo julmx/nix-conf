@@ -79,7 +79,6 @@ programs = {
     jq.enable = true; # A lightweight and flexible command-line JSON processor
     ssh.enable = true;
     ##aria2.enable = true; # downloader tool
-    #gpaste.enable = true; # clipboard managment
 
     skim = {
       enable = true;

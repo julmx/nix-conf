@@ -5,6 +5,7 @@
 
   # i3 related options
   environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw
+  services.displayManager.defaultSession = "none+i3";
   services.xserver = {
     enable = true;
 
@@ -13,7 +14,6 @@
     };
 
     displayManager = {
-        defaultSession = "none+i3";
         lightdm.enable = false;
         gdm.enable = true;
     };
@@ -41,8 +41,8 @@
     };
 
     # Configure keymap in X11
-    layout = "fr";
-    xkbVariant = "bepo";
+    xkb.layout = "fr";
+    xkb.variant = "bepo";
   };
 
   # thunar file manager(part of xfce) related options
