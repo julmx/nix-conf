@@ -22,12 +22,15 @@
     wineWowPackages.wayland
     xdg-utils
     graphviz
+    catppuccin
+    flameshot # screenshot tool
 
     # productivity
     obsidian
 
     # IDE
     ##insomnia # API design tool
+    vscode
     
     # cloud native
     docker-compose
