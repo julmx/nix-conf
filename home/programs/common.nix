@@ -15,7 +15,8 @@
     yq-go # https://github.com/mikefarah/yq lightweight and portable command-line YAML, JSON and XML use jq syntax, more formats supported
     htop
     tldr
-
+    xsel
+    
     # misc
     libnotify
     wineWowPackages.wayland
@@ -78,6 +79,7 @@ programs = {
     jq.enable = true; # A lightweight and flexible command-line JSON processor
     ssh.enable = true;
     ##aria2.enable = true; # downloader tool
+    gpaste.enable = true; # clipboard managment
 
     skim = {
       enable = true;
