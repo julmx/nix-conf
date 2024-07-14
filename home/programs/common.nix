@@ -14,6 +14,7 @@
     ripgrep
     yq-go # https://github.com/mikefarah/yq lightweight and portable command-line YAML, JSON and XML use jq syntax, more formats supported
     htop
+    tldr
 
     # misc
     libnotify
