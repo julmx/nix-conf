@@ -49,6 +49,7 @@
     # work stuff
     webex
     qgis
+    libreoffice
   ];
 
 programs = {
