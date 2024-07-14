@@ -52,4 +52,5 @@
   ];
   services.gvfs.enable = true; # Mount, trash, and other functionalities
   services.tumbler.enable = true; # Thumbnail support for images
+  services.greenclip.enable = true; # clipboard manager with rofi
 }
