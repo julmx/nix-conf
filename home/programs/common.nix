@@ -45,6 +45,10 @@
     ##dbeaver-bin
     mycli
     pgcli
+
+    # work stuff
+    webex
+    qgis
   ];
 
 programs = {
