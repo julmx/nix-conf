@@ -33,7 +33,7 @@
     vscode
     
     # cloud native
-#    docker-compose
+    docker-compose
     #kubectl
 
     ##nodejs
@@ -43,12 +43,12 @@
 
     # db related
     ##dbeaver-bin
-#    mycli
+    mycli
     pgcli
 
     # work stuff
 #    qgis
-#    libreoffice
+    libreoffice
   ];
 
 programs = {
