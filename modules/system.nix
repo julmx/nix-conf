@@ -80,7 +80,7 @@ in {
 
       # normal fonts
       noto-fonts
-      noto-fonts-cjk
+      noto-fonts-cjk-sans
       noto-fonts-emoji
 
       # nerdfonts
@@ -137,7 +137,6 @@ in {
   ];
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   services.power-profiles-daemon = {
     enable = true;

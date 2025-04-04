@@ -26,14 +26,14 @@
     flameshot # screenshot tool
 
     # productivity
-    obsidian
+#    obsidian
 
     # IDE
     ##insomnia # API design tool
     vscode
     
     # cloud native
-    docker-compose
+#    docker-compose
     #kubectl
 
     ##nodejs
@@ -43,13 +43,12 @@
 
     # db related
     ##dbeaver-bin
-    mycli
+#    mycli
     pgcli
 
     # work stuff
-    webex
-    qgis
-    libreoffice
+#    qgis
+#    libreoffice
   ];
 
 programs = {
