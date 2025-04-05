@@ -9,9 +9,14 @@
     ];
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usb_storage" "usbhid" "sd_mod" ];
-  boot.initrd.kernelModules = [ ];
+  boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+
+  boot.kernelParams = [
+  "video=DP-2:2560x1440@75"
+  "video=HDMI-1:1960x1080@60"
+  ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/91de96d9-b94c-4ec4-bcfe-5116943e3003";

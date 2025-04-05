@@ -36,6 +36,22 @@
   networking.networkmanager.enable = true;
   ##networking.defaultGateway = "192.168.1.254";
 
+  # AMD GPU stuff
+  # OpenCL
+  hardware.opengl.extraPackages = with pkgs; [
+  rocmPackages.clr.icd
+  ];
+  # Vulkan
+  hardware.graphics.enable32Bit = true; # For 32 bit applications
+  # amdvlk : The AMDVLK drivers can be used in addition to the Mesa RADV drivers. The program will choose which one to use
+  hardware.opengl.extraPackages = with pkgs; [
+  amdvlk
+  ];
+  # For 32 bit applications 
+  hardware.opengl.extraPackages32 = with pkgs; [
+    driversi686Linux.amdvlk
+  ];
+
   # Dual monitor configuration.
   services.xserver.xrandrHeads = [
    {

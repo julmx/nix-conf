@@ -8,6 +8,8 @@
   services.displayManager.defaultSession = "none+i3";
   services.xserver = {
     enable = true;
+    videoDrivers = [ "amdgpu" ];
+
 
     desktopManager = {
       xterm.enable = false;
