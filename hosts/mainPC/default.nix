@@ -54,13 +54,14 @@
   # Dual monitor configuration.
   services.xserver.xrandrHeads = [
    {
+    output = "HDMI-A-0";
+    monitorConfig = ''Option "LeftOf" "DisplayPort-1"'';
+   }
+   
+   {
     output = "DisplayPort-1";
     primary = true;
     monitorConfig = ''Option "RightOf" "HDMI-A-0"'';
-   }
-   {
-    output = "HDMI-A-0";
-    monitorConfig = ''Option "LeftOf" "DisplayPort-1"'';
    }
   ];
 
