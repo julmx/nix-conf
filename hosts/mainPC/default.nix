@@ -38,7 +38,7 @@
 
   # AMD GPU stuff
   # OpenCL
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
   rocmPackages.clr.icd
   # amdvlk : The AMDVLK drivers can be used in addition to the Mesa RADV drivers. The program will choose which one to use
   amdvlk
@@ -47,7 +47,7 @@
   hardware.graphics.enable32Bit = true; # For 32 bit applications
 
   # For 32 bit applications 
-  hardware.opengl.extraPackages32 = with pkgs; [
+  hardware.graphics.extraPackages32 = with pkgs; [
     driversi686Linux.amdvlk
   ];
 
@@ -57,7 +57,7 @@
     output = "HDMI-A-0";
     monitorConfig = ''Option "LeftOf" "DisplayPort-1"'';
    }
-   
+
    {
     output = "DisplayPort-1";
     primary = true;
