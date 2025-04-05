@@ -40,13 +40,12 @@
   # OpenCL
   hardware.opengl.extraPackages = with pkgs; [
   rocmPackages.clr.icd
+  # amdvlk : The AMDVLK drivers can be used in addition to the Mesa RADV drivers. The program will choose which one to use
+  amdvlk
   ];
   # Vulkan
   hardware.graphics.enable32Bit = true; # For 32 bit applications
-  # amdvlk : The AMDVLK drivers can be used in addition to the Mesa RADV drivers. The program will choose which one to use
-  hardware.opengl.extraPackages = with pkgs; [
-  amdvlk
-  ];
+
   # For 32 bit applications 
   hardware.opengl.extraPackages32 = with pkgs; [
     driversi686Linux.amdvlk
