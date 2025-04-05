@@ -14,8 +14,8 @@
   boot.extraModulePackages = [ ];
 
   boot.kernelParams = [
-  "video=DP-2:2560x1440@75"
-  "video=HDMI-1:1960x1080@60"
+  "video=DisplayPort-1:2560x1440@75"
+  "video=HDMI-A-0:1960x1080@60"
   ];
 
   fileSystems."/" =
