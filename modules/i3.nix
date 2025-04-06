@@ -46,6 +46,8 @@
     xkb.layout = "fr";
     xkb.variant = "bepo";
   };
+  # Makes it so the tty console has about the same layout as the one configured in the services.xserver options
+  console.useXkbConfig = true; 
 
   # thunar file manager(part of xfce) related options
   programs.thunar.plugins = with pkgs.xfce; [
