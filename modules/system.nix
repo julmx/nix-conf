@@ -70,6 +70,9 @@ in {
     variant = "bepo";
   };
 
+  # Makes it so the tty console has about the same layout as the one configured in the services.xserver options
+  console.useXkbConfig = true; 
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
